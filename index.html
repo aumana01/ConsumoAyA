@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicativo de consumo </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Ruleta de Consumo de Agua</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Consulta tu Consumo de Agua</h1>
+
+    <div class="form">
+
+      <label>Personas en el hogar:</label>
+
+      <input type="number" id="personas" min="1" value="2">
+
+      <label>Área del lote o vivienda (m²):</label>
+
+      <input type="number" id="area" min="1" value="70">
+
+      <label>Consumo mensual (m³):</label>
+
+      <input type="number" id="consumo" step="0.1" min="0">
+
+      <button onclick="evaluarConsumo()">Evaluar Consumo</button>
+
+    </div>
+
+    <div class="ruleta" id="ruleta">
+
+      <div class="aguja" id="aguja"></div>
+
+    </div>
+
+    <p id="resultado" class="resultado"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
